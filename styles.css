@@ -1,32 +1,128 @@
-html{
-    
+* {
+    margin: 0;
+    padding: 0;
 }
 
-head{
-    
+html {
+    background-color: white;
+    overflow: auto;
 }
 
-header{
-    
+.grid {
+    display: grid;
+    grid-gap: 10px;
+    grid-template-columns: 3vw 1fr 1fr 1fr 1fr 1fr 1fr 3vw;
+    grid-template-rows: repeat(4, auto);
+    /*
+    grid-template-areas:
+        ". title title ."
+        ". header header ."
+        ". sidebar content content ."
+        ". footer footer .";
+*/
+
 }
 
-body{
-    
+
+/*.logo {
+        grid-area: title;
+    margin-top: 30px;
+    grid-column: 2 / 3;
+    grid-row: 1 / 2;
+    background-color: grey;
+    height: 20vh;
+}*/
+
+.header {
+    margin-top: 30px;
+    grid-column: 2 / span 6;
+    grid-row: 1 / 2;
+    background-color: blue;
+    height: 20vh;
 }
 
-nav{
-    
+.sidebar {
+    grid-column: 2 / 2;
+    grid-row: 2 / 3;
+    background: red;
 }
 
-div{
-    
+.content {
+    grid-column: 3 / 8;
+    grid-row: 2 / 3;
+    background: rebeccapurple;
+    height: 60vh;
+    overflow: auto;
 }
 
-section{
-    
+.footer {
+    grid-column: 2 / 8;
+    grid-row: 3 / 4;
+    background-color: green;
+    height: 10vh;
 }
 
-footer{
-    
+
+/*ipad*/
+@media only screen and (max-width: 900px) {
+    html {
+        background-color: lightblue;
+    }
+
+    ul {
+        display: block;
+        width: 30%;
+    }
 }
 
+/*phone*/
+
+@media only screen and (max-width: 620px) {
+    html {
+        background-color: black;
+    }
+
+    ul {
+        display: block;
+        width: 30%;
+    }
+
+    .grid {
+        display: grid;
+        grid-gap: 10px;
+        grid-template-columns: 1vw 1fr 1fr 1vw;
+        grid-template-rows: repeat(5, auto);
+
+    }
+
+    .header {
+        margin-top: 30px;
+        grid-column: 2 / 4;
+        grid-row: 1 / 2;
+        background-color: blue;
+    }
+
+    .content {
+        grid-column: 2/ 4;
+        grid-row: 2 / 4;
+        background: rebeccapurple;
+        height: 50vh;
+        overflow: auto;
+    }
+
+    .sidebar {
+        grid-column: 2 / 4;
+        grid-row: 5 / 5;
+        background: red;
+        height: 7vh
+    }
+
+    .footer {
+        grid-column: 2 / 4;
+        grid-row: 6 / 6;
+        background-color: green;
+        height: 10vh;
+    }
+
+
+}
