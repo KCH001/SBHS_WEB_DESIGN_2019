@@ -13,14 +13,6 @@ html {
     grid-gap: 10px;
     grid-template-columns: 3vw 1fr 1fr 1fr 1fr 1fr 1fr 3vw;
     grid-template-rows: repeat(4, auto);
-    /*
-    grid-template-areas:
-        ". title title ."
-        ". header header ."
-        ". sidebar content content ."
-        ". footer footer .";
-*/
-
 }
 
 
@@ -41,10 +33,22 @@ html {
     height: 20vh;
 }
 
-.sidebar {
+.navigation {
     grid-column: 2 / 2;
     grid-row: 2 / 3;
     background: red;
+    display: grid;
+    grid-gap: 10px;
+    grid-template-columns: .5vw 1fr .5vw;
+    grid-template-rows: repeat(5, auto);
+}
+
+.nav {
+    margin-top: 3%;
+    grid-column: 2 / 2;
+    grid-row: 1 / 6;
+    background-color: orange;
+    height: 95%;
 }
 
 .content {
@@ -110,7 +114,7 @@ html {
         overflow: auto;
     }
 
-    .sidebar {
+    .navigation {
         grid-column: 2 / 4;
         grid-row: 5 / 5;
         background: red;
