@@ -36,19 +36,32 @@ html {
 .navigation {
     grid-column: 2 / 2;
     grid-row: 2 / 3;
-    background: red;
-    display: grid;
-    grid-gap: 10px;
-    grid-template-columns: .5vw 1fr .5vw;
-    grid-template-rows: repeat(5, auto);
+    background: orange;
 }
 
 .nav {
-    margin-top: 3%;
-    grid-column: 2 / 2;
-    grid-row: 1 / 6;
-    background-color: orange;
-    height: 95%;
+    list-style: none;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100%;
+}
+
+.nav li a {}
+
+li {
+    /*margin: 5% 0px;*/
+    padding: 1%;
+    text-align: center;
+}
+
+a {
+    color: black;
+    text-decoration: none;
+    padding: 1%;
+    background-color: darkgreen;
+    font-size: 2em;
 }
 
 .content {
