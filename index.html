@@ -13,27 +13,30 @@
 
     <div class="grid">
         <div class="header">Header</div>
-        <!--  <div class="navigation">
-      <ul class="nav">
-          <li>
-              <a href="index.html">Home</a>
-          </li>
-          <li>
-              <a href="about.html">About</a>
-          </li>
-          <li>
-              <a href="shop.html">Shop</a>
-          </li>
-          <li>
-              <a href="contact.html">Contact</a>
-          </li>
-          <li>
-              <a href="more.html">More</a>
-          </li>
-      </ul>
-  </div>-->
-        <div class="lsidebar">
 
+
+        <div class="lsidebar">
+            <article>
+                <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; open</span>
+                <div id="mySidenav" class="sidenav">
+                    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                    <a href="#">About</a>
+                    <a href="#">Services</a>
+                    <a href="#">Clients</a>
+                    <a href="#">Contact</a>
+                </div>
+
+                <script>
+                    function openNav() {
+                        document.getElementById("mySidenav").style.width = "250px";
+                    }
+
+                    function closeNav() {
+                        document.getElementById("mySidenav").style.width = "0";
+                    }
+
+                </script>
+            </article>
         </div>
         <div class="content">
             <section>
@@ -43,7 +46,9 @@
             </section>
         </div>
         <div class="rsidebar">
+            <article>
 
+            </article>
         </div>
         <div class="footer">Copyright © Keanu Christian Hodges 2019</div>
     </div>
