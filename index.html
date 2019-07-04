@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewpoint" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <title>Keanu's Web 2019</title>
 
 </head>
@@ -17,25 +18,27 @@
 
         <div class="lsidebar">
             <article>
-                <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; open</span>
-                <div id="mySidenav" class="sidenav">
-                    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-                    <a href="#">About</a>
-                    <a href="#">Services</a>
-                    <a href="#">Clients</a>
-                    <a href="#">Contact</a>
+                <div class="navbar">
+                    <div class="dropdown">
+                        <button class="dropbtn" alt="menu">Menu
+                            <i class="fa fa-caret-down"></i>
+                        </button>
+                        <div class="dropdown-content">
+                            <a href="#home"><i class="fa fa-home"></i> Home</a>
+                            <hr>
+                            <a href="#about"><i class="fa fa-info-circle"></i> About</a>
+                            <hr>
+                            <a href="#shop"><i class="fa fa-shopping-cart"></i> Shop</a>
+                            <hr>
+                            <a href="#contact"><i class="fa fa-envelope"></i> Contact</a>
+                            <hr>
+                            <a href="#more"><i class="fa fa-ellipsis-h"></i> MORE</a>
+                            <hr>
+                        </div>
+                    </div>
                 </div>
-
-                <script>
-                    function openNav() {
-                        document.getElementById("mySidenav").style.width = "250px";
-                    }
-
-                    function closeNav() {
-                        document.getElementById("mySidenav").style.width = "0";
-                    }
-
-                </script>
+                <img src="3._Images/biz-collection-t10012-mens-ice-tee__450_90_1519085894.webp" width="100%">
+                <img src="3._Images/biz-collection-t4060-mens-vibe-tee__450_90_1527110714.webp" width="100%">
             </article>
         </div>
         <div class="content">
@@ -47,6 +50,18 @@
         </div>
         <div class="rsidebar">
             <article>
+                <div class="navbar">
+                    <div class="dropdown">
+                        <button class="dropbtn" alt="Settings">Settings
+                            <i class="fa fa-cog"></i></button>
+                        <div class="dropdown-content">
+                            <a href="#theme"><i class="fa fa-adjust"></i> Color</a>
+                            <hr>
+                        </div>
+                    </div>
+                </div>
+                <img src="3._Images/biz-collection-t10012-mens-ice-tee__450_90_1519085894.webp" width="100%">
+                <img src="3._Images/biz-collection-t4060-mens-vibe-tee__450_90_1527110714.webp" width="100%">
 
             </article>
         </div>
