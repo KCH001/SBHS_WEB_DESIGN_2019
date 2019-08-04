@@ -1,6 +1,7 @@
   * {
       margin: 0;
       padding: 0;
+      list-style: none;
   }
 
   /*---------------HTML DESKTOP START---------------*/
@@ -26,14 +27,13 @@
   .grid {
       display: grid;
       grid-gap: 10px;
-      grid-template-columns: 3vw 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 3vw;
+      grid-template-columns: 1vw 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1vw;
       grid-template-rows: repeat(4, auto);
   }
 
   /*---------------DIV CLASS HEADER START---------------*/
 
   .header {
-        margin-top: 30px;
       grid-column: 4 / 13;
       grid-row: 1 / 2;
       /*    background-color: #cfcfcf;*/
@@ -54,7 +54,6 @@
   /*---------------DIV CLASS L(LEFT)SIDEBAR END---------------*/
 
   .lsidebar {
-      margin-top: 30px;
       grid-column: 2 / 4;
       grid-row: 1 / 4;
       background: #6c3082;
@@ -63,7 +62,12 @@
   .lsidebar article {
       background-color: #c0c0c0;
       margin: 5%;
-      height: 96%;
+      height: 83vh;
+  }
+
+  article {
+      overflow-y: scroll;
+
   }
 
 
@@ -106,10 +110,10 @@
   }
 
 
-  /* Add a red background color to navbar links on hover */
+  /* Add a blue background color to navbar links on hover */
   .navbar a:hover,
   .dropdown:hover .dropbtn {
-      background-color: red;
+      background-color: #00b4ff;
   }
 
   /* Dropdown content (hidden by default) */
@@ -117,7 +121,7 @@
       display: none;
       position: absolute;
       background-color: #f9f9f9;
-      min-width: 14.8%;
+      min-width: 16.5%;
       box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
       z-index: 1;
   }
@@ -142,7 +146,6 @@
       display: block;
   }
 
-
   /*---------------DIV CLASS NAVIGATION END---------------*/
 
   /*---------------DIV CLASS L(LEFT)SIDEBAR END---------------*/
@@ -158,9 +161,17 @@
 
   section {
       margin: 1%;
-      background-color: #ffffff;
+      background-color: rgba(250, 250, 250, .80);
       height: 95%;
       overflow: auto;
+  }
+
+  .topnav {
+      display: none;
+  }
+
+  .bottomnav {
+      display: none;
   }
 
   @font-face {
@@ -181,45 +192,303 @@
   }
 
   hr {
-      margin-left: 10px;
-      margin-right: 10px;
+      margin: auto;
+
   }
 
   .mp {
-      margin: 10px;
+      margin: 50px;
       font-size: 2em;
-      text-align: center;
+      text-align: left;
       @import url(http://allfont.net/allfont.css?fonts=franklin-gothic-heavy);
       font-family: 'Franklin Gothic Heavy', arial;
       /*font-family: Helvetica;*/
   }
 
+  .preeminent {
+      width: 50%;
+      margin-left: auto;
+      margin-right: auto;
+      display: block;
+  }
+
+  .Q {
+      margin-left: 15%;
+      margin-right: 15%;
+      font-size: 2em;
+      text-align: center;
+      @import url(http://allfont.net/allfont.css?fonts=franklin-gothic-heavy);
+      font-family: 'Franklin Gothic Heavy', arial;
+  }
+
+
+  .bigl {
+      @import url("https://use.typekit.net/toz4gra.css");
+      font-family: coquette, sans-serif;
+      font-weight: 900;
+      font-style: normal;
+      font-size: 4em;
+      text-align: left;
+  }
+
+
+  .bigr {
+      font-family: coquette, sans-serif;
+      font-weight: 900;
+      font-style: normal;
+      margin-left: 98%;
+      font-size: 4em;
+      text-align: right;
+  }
+
+  .ml {
+      margin: 10px;
+      font-size: 2em;
+      text-align: center;
+      text-decoration: none;
+      @import url(http://allfont.net/allfont.css?fonts=franklin-gothic-heavy);
+      font-family: 'Franklin Gothic Heavy', arial;
+  }
+
+  a .sl {
+      text-decoration: underline;
+  }
+
   .imgc {
       display: inline-block;
-      width: 33%;
+      width: 24%;
+      height: auto;
+      margin-left: auto;
+      margin-right: auto;
+  }
+
+
+  /*---------------SHOP.HTML CONTENT START---------------*/
+
+  /*Opacity With Box*/
+
+
+  .image {
+      opacity: 1;
+      display: inline-block;
+      width: 100%;
       height: auto;
       margin: auto;
+      transition: .5s ease;
+      backface-visibility: hidden;
+  }
 
+  .text a {
+      background-color: #4CAF50;
+      color: white;
+      font-size: 2em;
+      padding: 2vh 2vw;
+  }
+
+
+  .container22 {
+      position: relative;
+      width: 22%;
+      margin-left: 1vw;
+      height: auto;
+      display: inline-block;
+  }
+
+  .middle22 {
+      transition: .5s ease;
+      opacity: 0;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      /* -ms-transform: translate(-50%, -50%); */
+  }
+
+  .container22:hover .image22 {
+      opacity: 0.3;
+  }
+
+  .container22:hover .middle22 {
+      opacity: 1;
+  }
+
+  /*            */
+
+
+  .container30 {
+      position: relative;
+      width: 30%;
+      margin-left: 1vw;
+      height: auto;
+      display: inline-block;
+  }
+
+  .middle30 {
+      transition: .5s ease;
+      opacity: 0;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      /* -ms-transform: translate(-50%, -50%) */
+  }
+
+  .container30:hover .image30 {
+      opacity: 0.3;
+  }
+
+  .container30:hover .middle30 {
+      opacity: 1;
+  }
+
+  /*      */
+
+
+  .container48 {
+      position: relative;
+      width: 48%;
+      margin-left: 1vw;
+      height: auto;
+      display: inline-block;
+  }
+
+  .middle48 {
+      transition: .5s ease;
+      opacity: 0;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      /* -ms-transform: translate(-50%, -50%) */
+  }
+
+  .container48:hover .image48 {
+      opacity: 0.3;
+  }
+
+  .container48:hover .middle48 {
+      opacity: 1;
+  }
+
+  /*      */
+
+  h3 {
+      color: black;
+      text-align: center;
+      margin-top: 2vh;
+      margin-bottom: 2vh;
+      font-size: 2em;
+      @import url(http://allfont.net/allfont.css?fonts=franklin-gothic-heavy);
+      font-family: 'Franklin Gothic Heavy', arial;
+  }
+
+
+  /*ProductNav*/
+
+  h2 {
+      color: white;
+      padding: 5%;
+      text-align: center;
+      color: white;
 
   }
+
+
+  li.Pli {
+      padding: 2vh;
+      font-size: 1.5em;
+      background-color: #009ee2;
+      text-align: center;
+      font-family: 'Franklin Gothic Heavy', arial;
+
+  }
+
+  .Pa {
+      height: 80%;
+      color: black;
+      text-decoration: none;
+
+  }
+
+  li.Pli:hover {
+      background: #6c3082;
+      color: white;
+  }
+
+  /*End Of ProductNav*/
+
+  .leftContainer {
+      width: 100%;
+      background-color: black;
+      color: white;
+  }
+
+  /*
+h2 {
+    color: white;
+    padding: 2%;
+    text-align: center;
+}
+
+u {
+    color: white;
+}
+
+.Pnav {
+    background-color: #009ee2;
+    text-align: center;
+    font-size: 1.5em;
+}
+
+.Pa {
+    padding: 2.5vh;
+    height: 50%;
+}
+
+.Pli:hover {
+    background-color: #e24400;
+    font-size: 1em;
+    padding: 2%;
+}
+
+
+  /*---------------SHOP.HTML CONTENT END---------------*/
+
+
+  /*---------------CONTACT.HTML CONTENT START---------------*/
+
+
+  .cicon {
+      width: 100px;
+      height: 100px;
+      display: inline-block;
+
+  }
+
+  .icondiv {
+      margin-left: auto;
+      margin-right: auto;
+      display: table;
+  }
+
+  .maill {
+      text-decoration: none;
+      color: black;
+
+  }
+
+  .cmaint {
+      margin: 10px;
+      font-size: 3vw;
+      text-align: center;
+      font-family: Heavitas;
+  }
+
+  /*---------------CONTACT.HTML CONTENT END---------------*/
+
 
   /*---------------DIV CLASS CONTENT END---------------*/
 
-  /*---------------DIV CLASS R(RIGHT)SIDEBAR START---------------*/
-  .rsidebar {
-      /* margin-top: 30px;*/
-      grid-column: 11 / 13;
-      grid-row: 1 / 4;
-      background: #6c3082;
-  }
-
-  .rsidebar article {
-      background-color: #c0c0c0;
-      margin: 5%;
-      height: 96%
-  }
-
-  /*---------------DIV CLASS R(RIGHT)SIDEBAR END---------------*/
 
   /*---------------DIV CLASS FOOTER START---------------*/
 
@@ -235,24 +504,37 @@
       font-size: 150%
   }
 
+  .mf {
+      margin: 10px;
+      font-size: 1.5em;
+      text-align: center;
+      @import url(http://allfont.net/allfont.css?fonts=franklin-gothic-heavy);
+      font-family: 'Franklin Gothic Heavy', arial;
+  }
+
   /*---------------DIV CLASS FOOTER END---------------*/
 
   /*---------------DIV CLASS CSS GRIDS END---------------*/
 
   /*---------------HTML DESKTOP END---------------*/
 
+
+
+
+
+
   /*---------------HTML TABLET START---------------*/
 
-  @media only screen and (max-width: 900px) {
+  @media only screen and (max-width: 1100px) {
       html {
-          background-color: red;
+          background-color: white;
       }
 
       /*---------------DIV CLASS CSS GRIDS START---------------*/
 
       .grid {
           display: grid;
-          grid-gap: 10px;
+          grid-gap: 5px;
           grid-template-columns: 1vw 1fr 1fr 1fr 1vw;
           grid-template-rows: repeat(5, auto);
 
@@ -263,11 +545,18 @@
       /*---------------DIV CLASS HEADER START---------------*/
 
       .header {
-          margin-top: 30px;
           grid-column: 2 / 5;
           grid-row: 1 / 2;
-          background-color: blue;
+          background-color: white;
           height: 20vh;
+      }
+
+      .logo {
+          height: 85%;
+          width: auto;
+          display: block;
+          margin-left: auto;
+          margin-right: auto;
       }
 
       /*---------------DIV CLASS HEADER END---------------*/
@@ -296,28 +585,125 @@
           height: 95%;
       }
 
-      /*---------------DIV CLASS CONTENT END---------------*/
+      /*---------------TOP NAVIGATION BAR START---------------*/
 
-      /*---------------DIV CLASS R(RIGHT)SIDEBAR START---------------*/
+      .topnav {
+          overflow: hidden;
+          background-color: #333;
+          display: block;
+      }
 
-      .rsidebar {
+      .topnav a {
+          float: left;
+          display: block;
+          color: #f2f2f2;
+          text-align: center;
+          padding: 14px 16px;
+          text-decoration: none;
+          font-size: 17px;
+      }
+
+      .topnav a:hover {
+          background-color: #ddd;
+          color: black;
+      }
+
+      .topnav a.active {
+          background-color: #00b4ff;
+          color: white;
+      }
+
+      .topnav .icon {
           display: none;
       }
 
-      /*---------------DIV CLASS R(RIGHT)SIDEBAR START---------------*/
+      @media screen and (max-width: 600px) {
+          .topnav a:not(:first-child) {
+              display: none;
+          }
+
+          .topnav a.icon {
+              float: right;
+              display: block;
+          }
+      }
+
+      @media screen and (max-width: 600px) {
+          .topnav.responsive {
+              position: relative;
+          }
+
+          .topnav.responsive .icon {
+              position: absolute;
+              right: 0;
+              top: 0;
+          }
+
+          .topnav.responsive a {
+              float: none;
+              display: block;
+              text-align: left;
+          }
+
+      }
+
+      /*---------------TOP NAVIGATION BAR END---------------*/
+
+      /*---------------BOTTOM NAVIGATION BAR START---------------*/
+
+      .bottomnav {
+          overflow: hidden;
+          background-color: #333;
+          display: block;
+      }
+
+      .bottomnav a {
+          float: center;
+          display: block;
+          color: #f2f2f2;
+          text-align: center;
+          padding: 14px 16px;
+          text-decoration: none;
+          font-size: 17px;
+      }
+
+      .bottomnav a:hover {
+          background-color: #ddd;
+          color: black;
+      }
+
+      .bottomnav a.active {
+          background-color: #00b4ff;
+          color: white;
+      }
+
+      .bottomnav .icon {
+          display: none;
+      }
+
+      /*---------------BOTTOM NAVIGATION BAR END---------------*/
+
+      /*---------------DIV CLASS CONTENT END---------------*/
+
 
       /*---------------DIV CLASS FOOTER START---------------*/
 
       .footer {
           grid-column: 2 / 5;
           grid-row: 3 / 4;
-          background-color: green;
+          background-color: #595959;
           height: 10vh;
           display: flex;
           align-items: center;
           justify-content: center;
           text-align: center;
           font-size: 150%
+      }
+
+      .mf {
+          font-size: 1em;
+          text-align: center;
+          font-family: 'Franklin Gothic Heavy', arial;
       }
 
       /*---------------DIV CLASS FOOTER END---------------*/
@@ -342,7 +728,7 @@
 
       .grid {
           display: grid;
-          grid-gap: 10px;
+          grid-gap: 5px;
           grid-template-columns: 1vw 1fr 1fr 1vw;
           grid-template-rows: repeat(5, auto);
 
@@ -353,10 +739,18 @@
       /*---------------DIV CLASS HEADER START---------------*/
 
       .header {
-          margin-top: 30px;
           grid-column: 2 / 4;
           grid-row: 1 / 2;
           background-color: blue;
+          height: 20vh;
+      }
+
+      .logo {
+          height: 85%;
+          width: auto;
+          display: block;
+          margin-left: auto;
+          margin-right: auto;
       }
 
       /*---------------DIV CLASS HEADER END---------------*/
@@ -375,59 +769,22 @@
           grid-column: 2/ 4;
           grid-row: 2 / 4;
           background: rebeccapurple;
-          height: 50vh;
+          height: 65vh;
           overflow: auto;
       }
 
+      .preeminent {
+          width: 100%;
+          margin-left: auto;
+          margin-right: auto;
+          display: block;
+      }
+
+      .imgc {
+          width: 45%;
+      }
+
       /*---------------DIV CLASS CONTENT END---------------*/
-
-      /*---------------DIV CLASS R(RIGHT)SIDEBAR START---------------*/
-
-      .rsidebar {
-          display: none;
-      }
-
-      /*---------------DIV CLASS R(RIGHT)SIDEBAR START---------------*/
-
-      /*---------------DIV CLASS NAVIGATION START---------------*/
-
-      .navigation {
-          grid-column: 2 / 4;
-          grid-row: 5 / 5;
-          background: red;
-          height: 7vh;
-      }
-
-      .nav {
-          list-style: none;
-          height: auto;
-          display: flex;
-          flex-direction: column;
-          justify-content: center;
-          height: 100%;
-      }
-
-      .nav li a {}
-
-      li {
-          margin: 5% 0px;
-          padding: 1%;
-          text-align: center;
-          vertical-align: middle;
-      }
-
-      a {
-          color: black;
-          text-decoration: none;
-          padding: 1%;
-
-          background-color: darkgreen;
-          font-size: 5vh;
-          text-decoration: underline;
-          vertical-align: middle;
-      }
-
-      /*---------------DIV CLASS NAVIGATION END---------------*/
 
       /*---------------DIV CLASS FOOTER START---------------*/
 
@@ -436,6 +793,12 @@
           grid-row: 6 / 6;
           background-color: green;
           height: 10vh;
+      }
+
+      .mf {
+          font-size: 1em;
+          text-align: center;
+          font-family: 'Franklin Gothic Heavy', arial;
       }
 
       /*---------------DIV CLASS FOOTER END---------------*/
