@@ -25,10 +25,11 @@
   /*---------------DIV CLASS CSS GRIDS START---------------*/
 
   .grid {
-      display: grid;
+      display: inline-grid;
       grid-gap: 10px;
       grid-template-columns: 1vw 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1vw;
       grid-template-rows: repeat(4, auto);
+      margin-top: 30px;
   }
 
   /*---------------DIV CLASS HEADER START---------------*/
@@ -36,7 +37,6 @@
   .header {
       grid-column: 4 / 13;
       grid-row: 1 / 2;
-      /*    background-color: #cfcfcf;*/
       height: 20vh;
   }
 
@@ -70,6 +70,9 @@
 
   }
 
+  .ArchiveImg {
+      width: 100%;
+  }
 
   /*---------------DIV CLASS NAVIGATION START---------------*/
 
@@ -422,34 +425,6 @@
       background-color: black;
       color: white;
   }
-
-  /*
-h2 {
-    color: white;
-    padding: 2%;
-    text-align: center;
-}
-
-u {
-    color: white;
-}
-
-.Pnav {
-    background-color: #009ee2;
-    text-align: center;
-    font-size: 1.5em;
-}
-
-.Pa {
-    padding: 2.5vh;
-    height: 50%;
-}
-
-.Pli:hover {
-    background-color: #e24400;
-    font-size: 1em;
-    padding: 2%;
-}
 
 
   /*---------------SHOP.HTML CONTENT END---------------*/

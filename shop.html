@@ -5,9 +5,11 @@
     <meta charset="UTF-8">
     <meta name="viewpoint" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">\
-    <link href="http://allfont.net/allfont.css?fonts=franklin-gothic-heavy" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="http://allfont.net/allfont.css?fonts=franklin-gothic-heavy" rel="stylesheet" type="text/css">
     <link rel="stylesheet" href="https://use.typekit.net/toz4gra.css">
+    <script src="script.js"></script>
+
 
     <title>Eminance Merchandise | Shop</title>
 
@@ -17,12 +19,11 @@
 
     <div class="grid">
         <div class="header">
-            <a href="index.html"><img class="logo" id="myImage" src="3._Images/EM-LOGO3.png" alt="Eminance Merchandise"></a>
-
+            <a href="index.html"><img class="logo" id="myImage" src="3._Images/EM-LOGO-BANNER-T.png" alt="Eminance Merchandise"></a>
 
             <script>
                 function myFunction(x) {
-                    if (x.matches) { // If media query matches
+                    if (x.matches) {
                         document.getElementById('myImage').src = '3._Images/EM-LOGO3.png';
                     } else {
                         document.getElementById('myImage').src = '3._Images/EM-LOGO-BANNER-T.png';
@@ -30,10 +31,10 @@
                 }
 
                 var x = window.matchMedia("(max-width: 650px)")
-                myFunction(x) // Call listener function at run time
-                x.addListener(myFunction) // Attach listener function on state changes
-            </script>
+                myFunction(x) /*// Call listener function at run time*/
+                x.addListener(myFunction) /*// Attach listener function on state changes*/
 
+            </script>
 
         </div>
 
@@ -59,33 +60,6 @@
                 </div>
             </div>
             <article>
-                <div class="leftContainer">
-                    <h2>
-                        <u style="text-decoration: underline;">Product Type</u>
-                    </h2>
-                    <ul class="Pnav">
-                        <a class="Pa" href="#TShirts">
-                            <li class="Pli">T-Shirts</li>
-                        </a>
-                        <hr>
-                        <a class="Pa" href="#Polos">
-                            <li class="Pli">Polos</li>
-                        </a>
-                        <hr>
-                        <a class="Pa" href="#Hoodies">
-                            <li class="Pli">Hoodies</li>
-                        </a>
-                        <hr>
-                        <a class="Pa" href="#Jackets">
-                            <li class="Pli">Jackets / Vest</li>
-                        </a>
-                        <hr>
-                        <a class="Pa" href="#Accessories">
-                            <li class="Pli">Accessories</li>
-                        </a>
-                        <hr>
-                    </ul>
-                </div>
                 <br>
                 <hr width="90%">
                 <br>
@@ -99,11 +73,11 @@
                 <br>
                 <p class="mf"><u>2016</u></p>
                 <br>
-                <a href="http://bit.ly/CardRetail">
-                    <img src="3._Images/BicycleRetail.png" width="100%">
+                <a href="http://bit.ly/CardRetail" target="_blank">
+                    <img class="ArchiveImg" src="3._Images/Archive/BicycleRetail.png">
                 </a>
-                <a href="http://bit.ly/MiniParking1">
-                    <img src="3._Images/MiniP&DC.png" width="100%">
+                <a href="http://bit.ly/MiniParking1" target="_blank">
+                    <img class="ArchiveImg" src="3._Images/Archive/MiniP&DC.png">
                 </a>
                 <br>
                 <hr width="90%">
@@ -111,11 +85,11 @@
                 <hr width="90%">
                 <br>
                 <p class="mf"><u>2017</u></p>
-                <a href="http://bit.ly/ksclothingcohome">
-                    <img src="3._Images/K'sCC.png" width="100%">
+                <a href="http://bit.ly/ksclothingcohome" target="_blank">
+                    <img class="ArchiveImg" src="3._Images/Archive/K'sCC.png">
                 </a>
-                <a href="http://bit.ly/MiniParking2">
-                    <img src="3._Images/MiniCooper.png" width="100%">
+                <a href="http://bit.ly/MiniParking2" target="_blank">
+                    <img class="ArchiveImg" src="3._Images/Archive/MiniCooper.png">
                 </a>
                 <br>
                 <hr width="90%">
@@ -123,11 +97,11 @@
                 <hr width="90%">
                 <br>
                 <p class="mf"><u>2018</u></p>
-                <a href="http://bit.ly/HodgesAviation">
-                    <img src="3._Images/HAA1.png" width="100%">
+                <a href="http://bit.ly/HodgesAviation" target="_blank">
+                    <img class="ArchiveImg" src="3._Images/Archive/HAA.png">
                 </a>
-                <a href="http://bit.ly/HighwayRush">
-                    <img src="3._Images/HR_Game.png" width="100%">
+                <a href="http://bit.ly/HighwayRush" target="_blank">
+                    <img class="ArchiveImg" src="3._Images/Archive/HR_Game.png">
                 </a>
                 <br>
                 <hr width="90%">
@@ -149,24 +123,13 @@
                         <i class="fa fa-bars"></i>
                     </a>
                 </div>
-                <script>
-                    function myFunction() {
-                        var x = document.getElementById("myTopnav");
-                        if (x.className === "topnav") {
-                            x.className += " responsive";
-                        } else {
-                            x.className = "topnav";
-                        }
-                    }
-                </script>
-
                 <br>
                 <h1 class="maint">Shop</h1>
                 <br>
                 <hr width="90%">
                 <br>
                 <p class="mp">WE ARE EMINENCE... Now time for you to join the movement.</p>
-                <p class="mp">Womens Sizes Avalible on Request</p>
+                <p class="mp">Womens Sizes Avalible on Request, and other branding options.</p>
 
                 <a id="TShirts">
                     <h3>T-Shirts</h3>
@@ -413,14 +376,14 @@
                 </div>
 
                 <div class="container48">
-                    <img class="image" src="3._Images/Apparel/Vests/Men/Front/Black.png" alt="MensBlackCyanJacketFront">
+                    <img class="image" src="3._Images/Apparel/Vests/Mens/Front/Black.png" alt="MensBlackCyanJacketFront">
                     <div class="middle48">
                         <div class="text"><a class="buy" href="Contact.html">$79.99</a></div>
                     </div>
                 </div>
 
                 <div class="container48">
-                    <img class="image" src="3._Images/Apparel/Vests/Men/Back/Black.png" alt="MensBlackCyanJacketBack">
+                    <img class="image" src="3._Images/Apparel/Vests/Mens/Back/Black.png" alt="MensBlackCyanJacketBack">
                     <div class="middle48">
                         <div class="text"><a class="buy" href="Contact.html">$79.99</a></div>
                     </div>
@@ -443,6 +406,19 @@
                     <a href="javascript:void(0);" class="icon" onclick="myFunction()">
                         <i class="fa fa-bars"></i>
                     </a>
+
+                    <script>
+                        function myFunction() {
+                            var x = document.getElementById("myTopnav");
+                            if (x.className === "topnav") {
+                                x.className += " responsive";
+                            } else {
+                                x.className = "topnav";
+                            }
+                        }
+
+                    </script>
+
                 </div>
 
             </section>
@@ -453,4 +429,6 @@
     </div>
 
 
-</body></html>
+</body>
+
+</html>

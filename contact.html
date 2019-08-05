@@ -5,9 +5,11 @@
     <meta charset="UTF-8">
     <meta name="viewpoint" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">\
-    <link href="http://allfont.net/allfont.css?fonts=franklin-gothic-heavy" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="http://allfont.net/allfont.css?fonts=franklin-gothic-heavy" rel="stylesheet" type="text/css">
     <link rel="stylesheet" href="https://use.typekit.net/toz4gra.css">
+    <script src="script.js"></script>
+
 
     <title>Eminance Merchandise | Contact</title>
 
@@ -17,12 +19,11 @@
 
     <div class="grid">
         <div class="header">
-            <a href="index.html"><img class="logo" id="myImage" src="3._Images/EM-LOGO3.png" alt="Eminance Merchandise"></a>
-
+            <a href="index.html"><img class="logo" id="myImage" src="3._Images/EM-LOGO-BANNER-T.png" alt="Eminance Merchandise"></a>
 
             <script>
                 function myFunction(x) {
-                    if (x.matches) { // If media query matches
+                    if (x.matches) {
                         document.getElementById('myImage').src = '3._Images/EM-LOGO3.png';
                     } else {
                         document.getElementById('myImage').src = '3._Images/EM-LOGO-BANNER-T.png';
@@ -30,10 +31,10 @@
                 }
 
                 var x = window.matchMedia("(max-width: 650px)")
-                myFunction(x) // Call listener function at run time
-                x.addListener(myFunction) // Attach listener function on state changes
-            </script>
+                myFunction(x) /*// Call listener function at run time*/
+                x.addListener(myFunction) /*// Attach listener function on state changes*/
 
+            </script>
 
         </div>
 
@@ -72,11 +73,11 @@
                 <br>
                 <p class="mf"><u>2016</u></p>
                 <br>
-                <a href="http://bit.ly/CardRetail">
-                    <img src="3._Images/BicycleRetail.png" width="100%">
+                <a href="http://bit.ly/CardRetail" target="_blank">
+                    <img class="ArchiveImg" src="3._Images/Archive/BicycleRetail.png">
                 </a>
-                <a href="http://bit.ly/MiniParking1">
-                    <img src="3._Images/MiniP&DC.png" width="100%">
+                <a href="http://bit.ly/MiniParking1" target="_blank">
+                    <img class="ArchiveImg" src="3._Images/Archive/MiniP&DC.png">
                 </a>
                 <br>
                 <hr width="90%">
@@ -84,11 +85,11 @@
                 <hr width="90%">
                 <br>
                 <p class="mf"><u>2017</u></p>
-                <a href="http://bit.ly/ksclothingcohome">
-                    <img src="3._Images/K'sCC.png" width="100%">
+                <a href="http://bit.ly/ksclothingcohome" target="_blank">
+                    <img class="ArchiveImg" src="3._Images/Archive/K'sCC.png">
                 </a>
-                <a href="http://bit.ly/MiniParking2">
-                    <img src="3._Images/MiniCooper.png" width="100%">
+                <a href="http://bit.ly/MiniParking2" target="_blank">
+                    <img class="ArchiveImg" src="3._Images/Archive/MiniCooper.png">
                 </a>
                 <br>
                 <hr width="90%">
@@ -96,11 +97,11 @@
                 <hr width="90%">
                 <br>
                 <p class="mf"><u>2018</u></p>
-                <a href="http://bit.ly/HodgesAviation">
-                    <img src="3._Images/HAA1.png" width="100%">
+                <a href="http://bit.ly/HodgesAviation" target="_blank">
+                    <img class="ArchiveImg" src="3._Images/Archive/HAA.png">
                 </a>
-                <a href="http://bit.ly/HighwayRush">
-                    <img src="3._Images/HR_Game.png" width="100%">
+                <a href="http://bit.ly/HighwayRush" target="_blank">
+                    <img class="ArchiveImg" src="3._Images/Archive/HR_Game.png">
                 </a>
                 <br>
                 <hr width="90%">
@@ -121,18 +122,20 @@
                     <a href="javascript:void(0);" class="icon" onclick="myFunction()">
                         <i class="fa fa-bars"></i>
                     </a>
-                </div>
-                <script>
-                    function myFunction() {
-                        var x = document.getElementById("myTopnav");
-                        if (x.className === "topnav") {
-                            x.className += " responsive";
-                        } else {
-                            x.className = "topnav";
-                        }
-                    }
-                </script>
 
+                    <script>
+                        function myFunction() {
+                            var x = document.getElementById("myTopnav");
+                            if (x.className === "topnav") {
+                                x.className += " responsive";
+                            } else {
+                                x.className = "topnav";
+                            }
+                        }
+
+                    </script>
+
+                </div>
                 <br>
                 <h1 class="maint">Contact</h1>
                 <br>
@@ -144,8 +147,8 @@
                     <p class="mp">So if you're ever in need of help just ask by using our contact information below.
                         From this infomation you may place you order on any piece of Merchandise we have showing.
                         <br>
-                        <div class="icondiv"><img class="cicon" src="3._Images/email.png" alt="Email">
-                            <img class="cicon" src="3._Images/phone.png" alt="Phone"></div>
+                        <div class="icondiv"><img class="cicon" src="3._Images/Contact_Icons/email.png" alt="Email">
+                            <img class="cicon" src="3._Images/Contact_Icons/phone.png" alt="Phone"></div>
                         <br>
                         <p class="cmaint">
                             <a class="maill" href="mailto:KCH.Webshop.Clothing@gmail.com?Subject=EminenceMerchInquiry" target="_top">Email : KCH.webshop.clothing@gmail.com</a>
@@ -171,4 +174,6 @@
     </div>
 
 
-</body></html>
+</body>
+
+</html>

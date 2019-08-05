@@ -5,9 +5,10 @@
     <meta charset="UTF-8">
     <meta name="viewpoint" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">\
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link href="http://allfont.net/allfont.css?fonts=franklin-gothic-heavy" rel="stylesheet" type="text/css" />
     <link rel="stylesheet" href="https://use.typekit.net/toz4gra.css">
+    <!--    <script src="script.js"></script>-->
 
     <title>Eminance Merchandise | Home</title>
 
@@ -17,12 +18,11 @@
 
     <div class="grid">
         <div class="header">
-            <a href="index.html"><img class="logo" id="myImage" src="3._Images/EM-LOGO3.png" alt="Eminance Merchandise"></a>
-
+            <a href="index.html"><img class="logo" id="myImage" src="3._Images/EM-LOGO-BANNER-T.png" alt="Eminance Merchandise"></a>
 
             <script>
                 function myFunction(x) {
-                    if (x.matches) { // If media query matches
+                    if (x.matches) {
                         document.getElementById('myImage').src = '3._Images/EM-LOGO3.png';
                     } else {
                         document.getElementById('myImage').src = '3._Images/EM-LOGO-BANNER-T.png';
@@ -30,11 +30,10 @@
                 }
 
                 var x = window.matchMedia("(max-width: 650px)")
-                myFunction(x) // Call listener function at run time
-                x.addListener(myFunction) // Attach listener function on state changes
+                myFunction(x) /*// Call listener function at run time*/
+                x.addListener(myFunction) /*// Attach listener function on state changes*/
 
             </script>
-
 
         </div>
 
@@ -74,10 +73,10 @@
                 <p class="mf"><u>2016</u></p>
                 <br>
                 <a href="http://bit.ly/CardRetail" target="_blank">
-                    <img src="3._Images/BicycleRetail.png" width="100%">
+                    <img class="ArchiveImg" src="3._Images/Archive/BicycleRetail.png">
                 </a>
                 <a href="http://bit.ly/MiniParking1" target="_blank">
-                    <img src="3._Images/MiniP&DC.png" width="100%">
+                    <img class="ArchiveImg" src="3._Images/Archive/MiniP&DC.png">
                 </a>
                 <br>
                 <hr width="90%">
@@ -86,10 +85,10 @@
                 <br>
                 <p class="mf"><u>2017</u></p>
                 <a href="http://bit.ly/ksclothingcohome" target="_blank">
-                    <img src="3._Images/K'sCC.png" width="100%">
+                    <img class="ArchiveImg" src="3._Images/Archive/K'sCC.png">
                 </a>
                 <a href="http://bit.ly/MiniParking2" target="_blank">
-                    <img src="3._Images/MiniCooper.png" width="100%">
+                    <img class="ArchiveImg" src="3._Images/Archive/MiniCooper.png">
                 </a>
                 <br>
                 <hr width="90%">
@@ -98,10 +97,10 @@
                 <br>
                 <p class="mf"><u>2018</u></p>
                 <a href="http://bit.ly/HodgesAviation" target="_blank">
-                    <img src="3._Images/HAA1.png" width="100%">
+                    <img class="ArchiveImg" src="3._Images/Archive/HAA.png">
                 </a>
                 <a href="http://bit.ly/HighwayRush" target="_blank">
-                    <img src="3._Images/HR_Game.png" width="100%">
+                    <img class="ArchiveImg" src="3._Images/Archive/HR_Game.png">
                 </a>
                 <br>
                 <hr width="90%">
@@ -119,21 +118,22 @@
                     <a href="shop.html"><i class="fa fa-shopping-cart"></i> Shop</a>
                     <a href="contact.html"><i class="fa fa-envelope"></i> Contact</a>
                     <a href="more.html"><i class="fa fa-ellipsis-h"></i> MORE</a>
-                    <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                    <a href="javascript:void(0);" class="icon" onclick="Topnav()">
                         <i class="fa fa-bars"></i>
                     </a>
-                </div>
-                <script>
-                    function myFunction() {
-                        var x = document.getElementById("myTopnav");
-                        if (x.className === "topnav") {
-                            x.className += " responsive";
-                        } else {
-                            x.className = "topnav";
-                        }
-                    }
 
-                </script>
+                    <script>
+                        function Topnav() {
+                            var x = document.getElementById("myTopnav");
+                            if (x.className === "topnav") {
+                                x.className += " responsive";
+                            } else {
+                                x.className = "topnav";
+                            }
+                        }
+
+                    </script>
+                </div>
 
                 <br>
                 <h1 class="maint">Home</h1>
@@ -182,10 +182,24 @@
                     to browse products, or click on one of our featured items below.
                     <br>
                     <br>
-                    <a href="shop.html"><img class="imgc" src="3._Images/Apparel/Tees/Mens/1biz-collection-t10012-mens-ice-tee-black.jpg" width="100%">
-                        <img class="imgc" src="3._Images/Apparel/Polos/1biz-collection-p226ms-mens-jet-polo-blackcyan.jpg" width="100%">
-                        <img class="imgc" src="3._Images/Apparel/Hoodies/Mens/biz-collection-sw760m-mens-crew-pullover-hoodie-black.jpg" width="100%">
-                        <img class="imgc" src="3._Images/Apparel/Jackets/Mens/biz-collection-j307m-mens-geneva-jacket-blackcyan.jpg" width="100%"></a>
+                    <div class="container30">
+                        <img class="image" src="3._Images/Apparel/Tees/Mens/SmlChest/Black.png" alt="MensBlackTeeSmlChest">
+                        <div class="middle30">
+                            <div class="text"><a class="buy" href="Contact.html">$19.99</a></div>
+                        </div>
+                    </div>
+                    <div class="container30">
+                        <img class="image" src="3._Images/Apparel/Hoodies/Mens/Pocket/Charcoal.png" alt="MensCharcoalHoodiePocket">
+                        <div class="middle30">
+                            <div class="text"><a href="Contact.html">$29.99</a></div>
+                        </div>
+                    </div>
+                    <div class="container30">
+                        <img class="image" src="3._Images/Apparel/Hoodies/Mens/Chest/Grey-Marle.png" alt="MensGrey-MarleHoodieChest">
+                        <div class="middle30">
+                            <div class="text"><a href="Contact.html">$29.99</a></div>
+                        </div>
+                    </div>
                 </p>
                 <div class="bottomnav" id="myBottomnav">
                     <a href="index.html" class="active"><i class="fa fa-home"></i> Home</a>
@@ -193,9 +207,7 @@
                     <a href="shop.html"><i class="fa fa-shopping-cart"></i> Shop</a>
                     <a href="contact.html"><i class="fa fa-envelope"></i> Contact</a>
                     <a href="more.html"><i class="fa fa-ellipsis-h"></i> MORE</a>
-                    <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-                        <i class="fa fa-bars"></i>
-                    </a>
+
                 </div>
 
             </section>
